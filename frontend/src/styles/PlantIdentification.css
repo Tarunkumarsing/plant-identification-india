@@ -1,0 +1,47 @@
+.plant-identification-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .category-section {
+    margin-bottom: 1rem;
+  }
+  
+  .options-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  
+  .option-item {
+    margin-bottom: 0.25rem;
+  }
+  
+  .submit-btn {
+    margin-top: 1.5rem;
+  }
+  
+  .result-item {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .result-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-details {
+    font-size: 0.85rem;
+  }
+  
+  .species-details {
+    border-left: 4px solid #2e7d32;
+  }
+  
+  @media (max-width: 768px) {
+    .options-list {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }

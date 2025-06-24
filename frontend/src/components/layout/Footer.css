@@ -1,0 +1,28 @@
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: flex-start; /* Aligns content to the left */
+    padding-left: 20px; /* Adds some left padding */
+  }
+  
+  .copyright {
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  
+  /* Make sure the main content has enough bottom padding to prevent overlap */
+  body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 60px; /* Height of footer plus some extra space */
+  }

@@ -1,0 +1,21 @@
+.plant-glossary-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .category-title {
+    color: #2e7d32;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .term-title {
+    color: #2e7d32;
+    margin-bottom: 0.5rem;
+  }
+  
+  .term-definition {
+    color: #555;
+    margin-bottom: 0;
+  }

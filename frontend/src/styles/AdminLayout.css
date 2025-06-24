@@ -1,0 +1,86 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .admin-sidebar {
+    width: 250px;
+    background-color: #2e7d32;
+    color: white;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+  
+  .admin-sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .admin-sidebar-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .admin-sidebar-header p {
+    margin: 5px 0 0;
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+  
+  .admin-menu {
+    padding: 15px 0;
+  }
+  
+  .admin-menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  
+  .admin-menu-item i {
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .admin-menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .admin-menu-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-left: 4px solid white;
+  }
+  
+  .admin-menu hr {
+    margin: 15px 0;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .logout-button {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 12px 20px;
+  }
+  
+  .logout-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 25px;
+    margin-left: 250px;
+    background-color: #f5f5f5;
+  }

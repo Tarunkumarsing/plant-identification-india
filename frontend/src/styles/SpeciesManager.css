@@ -1,0 +1,194 @@
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .species-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    height: 100%;
+  }
+  
+  .species-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .species-image {
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .species-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .no-image {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+  }
+  
+  .no-image i {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  
+  .species-info {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  
+  .species-name {
+    color: #2e7d32;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .species-family {
+    display: inline-block;
+    background-color: #f0f0f0;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .species-description {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .species-characteristics {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .characteristic {
+    display: flex;
+    font-size: 0.85rem;
+  }
+  
+  .characteristic-label {
+    color: #777;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  
+  .characteristic-value {
+    color: #444;
+  }
+  
+  .species-actions {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    background-color: #f9f9f9;
+  }
+  
+  .image-upload-container {
+    width: 100%;
+  }
+  
+  .image-upload-placeholder {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .image-upload-placeholder:hover {
+    border-color: #2e7d32;
+    background-color: rgba(46, 125, 50, 0.05);
+  }
+  
+  .image-upload-placeholder i {
+    font-size: 2.5rem;
+    color: #aaa;
+    margin-bottom: 10px;
+  }
+  
+  .image-upload-placeholder p {
+    color: #777;
+    margin: 0;
+  }
+  
+  .image-preview-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 200px;
+  }
+  
+  .image-preview {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .image-remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .characteristics-container {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .characteristic-category {
+    margin-bottom: 15px;
+  }
+  
+  .characteristic-category h5 {
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+  }
+  
+  .characteristic-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
